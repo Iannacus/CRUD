@@ -23,14 +23,9 @@ btnAdd.addEventListener("click", e => {
 
 addCar.addEventListener("click", e => {
     e.preventDefault();
-    console.log(price);
-    if(price.value<1){
-        alert("Debes rellenar todos los campos");
-    }else{
-        collectData(e.target);
-        createHtmlCar(cars);
-        e.target.parentElement.parentElement.parentElement.style.display = "none";
-    }
+    collectData(e.target);
+    createHtmlCar(cars);
+    e.target.parentElement.parentElement.parentElement.style.display = "none";
     
 })
 
