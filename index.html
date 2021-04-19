@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ian car Crud</title> <!--Titulo del documento -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container center add mr-top-4" id="btnAdd">
+            <a href="#" class="btn btn--update" >Agregar</a>
+        </div>
+        
+        <div class="container center hideForm">
+  
+            <form action="" class="glassmMedium carForm">
+              <div class="formRow">
+                <div class="formRow__input">
+                  <label for="">Marca</label>
+                  <select id="brand">
+                    <option value="1">Suzuki</option>
+                    <option value="2">Nissan</option>
+                    <option value="3">Ford</option>
+                  </select>
+                </div>
+                <div class="formRow__input">
+                  <label for="">Modelo</label>
+                  <select id="models">
+
+                  </select>   
+                </div>
+                <div class="formRow__input">
+                  <label for="">Año</label>
+                  <select name="" id="">
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                    <option value="">2021</option>
+                  </select>
+                </div>
+              
+              </div>
+              <div class="formRow">
+                <div class="formRow__input">
+                  <label for="">Color</label>
+                  <select id="colors">
+                    <option value="">Red</option>
+                  </select>
+                </div>
+                <div class="formRow__input">
+                  <label for="">Precio</label>
+                  <input type="number">
+                </div>
+              </div>
+              
+              <div class="formRow">
+               <input type="submit" value="Agregar" class="btn  btn--update center" id="addCar">
+              </div>
+            </form>
+        </div>
+
+        <div class="carList" id="list">
+            <!--Inyectar HTML desde JS-->
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+
+</html>
