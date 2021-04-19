@@ -6,6 +6,7 @@ const models = document.getElementById("models");
 const brandCars = document.getElementById("brand");
 const colors = document.getElementById("colors");
 const btn = document.getElementById("btnAddUpdate");
+const price = document.getElementById("price");
 let cars = [];
 let id = 0;
 let updateID = "";
@@ -22,9 +23,15 @@ btnAdd.addEventListener("click", e => {
 
 addCar.addEventListener("click", e => {
     e.preventDefault();
-    collectData(e.target);
-    createHtmlCar(cars);
-    e.target.parentElement.parentElement.parentElement.style.display = "none";
+    console.log(price);
+    if(price.value="0"){
+        alert("Debes rellenar todos los campos");
+    }else{
+        collectData(e.target);
+        createHtmlCar(cars);
+        e.target.parentElement.parentElement.parentElement.style.display = "none";
+    }
+    
 })
 
 list.addEventListener("click", e => {
